@@ -239,31 +239,31 @@ def unli(letter:str):
 # print(unli(input("harf kiriting:")))
 
 """unli yoki undosh"""
-unli = []
-undosh = []
-def harf(letter:str) -> str:
-    """  """
-    lu = ["a","e","i","u","o"]
-    for l in letter:
-        if l == " ":
-            continue
-        elif l in lu:
-            unli.append(l)
-        elif l not in lu:
-            undosh.append(l)
-    return f"{unli} shu matindagi unli harflar, {undosh} shu matindagi undosh harflar"
+# unli = []
+# undosh = []
+# def harf(letter:str) -> str:
+#     """  """
+#     lu = ["a","e","i","u","o"]
+#     for l in letter:
+#         if l == " ":
+#             continue
+#         elif l in lu:
+#             unli.append(l)
+#         elif l not in lu:
+#             undosh.append(l)
+#     return f"{unli} shu matindagi unli harflar, {undosh} shu matindagi undosh harflar"
 
 # print(harf(input("matn kiring: ")))
 
 """ o'rta arifmetik """
-def middle(*numbers:int)->int:
-    """ """
-    summa = 0
-    count = 0
-    for number in numbers:
-        summa += number
-        count += 1
-    return summa/count
+# def middle(*numbers:int)->int:
+#     """ """
+#     summa = 0
+#     count = 0
+#     for number in numbers:
+#         summa += number
+#         count += 1
+#     return summa/count
 
 # print(middle(12,0,9,52))
 # print(middle(23,45))
