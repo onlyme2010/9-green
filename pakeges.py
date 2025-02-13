@@ -69,22 +69,27 @@ import datetime
 
 # fodalanuvchi = otgan_kunlar(yil,oy,kun)
 # print(fodalanuvchi)
+from datetime import date
 
-import datetime
-yil = 2025
-yil1 = 2025 + 1
+bugun = datetime.date.today()
 
-hozir = datetime.date.today()
-tyil = int(input("Tug'ilgan yilingizni kiriting: "))
-toy = int(input("Tug'ilgan oyingizni kiriting: "))
-tkun = int(input("Tug'ilgan kuningizni kiriting: "))
-tsana = datetime.date(tyil, toy, tkun)
+# kun = int(input("Tug'ilgan kuningizni kiriting: "))
+# oy = int(input("Tug'ilgan oyingizni kiriting: "))
 
-if tsana > hozir:
-    # a = tsana-hozir
-    print(f"{(tsana-hozir).days} kun bor")
-elif tsana < hozir:
-    print(f"{(hozir-tsana).days} kun o'tdi")
-    # a = hozir-tsana
+# sana1 = datetime.date(bugun.year, oy, kun)
+# sana2 = datetime.date(bugun.year+1, oy, kun)
 
+# if sana1 > bugun:
+#     qolgan_kunlar = (sana1-bugun).days
+#     print(f"Sizn ing keyingi tug'ilgan kuningizga {qolgan_kunlar} kun qoldi.")
+# elif sana1 < bugun:
+#     qolgan_kunlar = (sana2-bugun).days
+#     print(f"Sizn keyingi tug'ilgan kuningizga {qolgan_kunlar} kun qoldi.") 
+# else:
+#     print("Tug'ilgan kuningiz bilan!")
 
+"""4"""
+bugun = datetime.date.today()
+x = int(input("Kunni kiriting: "))
+sana = bugun + datetime.timedelta(days=x)
+print(sana)
